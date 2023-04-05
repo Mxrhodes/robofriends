@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CardList from "./CardList";
 import SearchBox from "./SearchBox";
 import { robots } from "./robots";
+import './App.css';
 
 
 
@@ -29,7 +30,7 @@ class App extends Component {
             // SearchBox -- You can create methods that modify the "this.states" that we supply.
             // CardList -- We first supplied it with "all robots" - now we supply it with filtered robots
             <div className="tc">
-                <h1>RoboFriends</h1>
+                <h1 className="f1">RoboFriends</h1>
                 <SearchBox searchChange={this.onSearchChange} />
                 <CardList robots={filteredRobots} /> 
             </div>
